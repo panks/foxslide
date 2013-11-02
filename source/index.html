@@ -4,17 +4,17 @@ layout: default
 
 <div id="front-wrapper">
   <div id="hero">
-    <div id="hero-inner" class="container">
-      {% include custom/hero.html %}
+    <div id="hero-inner">
+      {% include custom/intro.html %}
     </div>
   </div>
   <section id="sub-hero">
     <div class="container">
-      {% include custom/hero_widgets.html %}
+      {% include custom/widgets.html %}
     </div>
   </section>
   <div class="container">
-    <div class="row">
+    <div class="row" id="post-container">
     {% assign index = true %}
     {% for post in paginator.posts %}
     {% assign content = post.content %}
